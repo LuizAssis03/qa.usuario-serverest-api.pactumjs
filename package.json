@@ -96,11 +96,16 @@
     "yocto-queue": "^0.1.0"
   },
   "devDependencies": {
+    "@faker-js/faker": "^9.0.3",
+    "joi": "^17.13.3",
     "mocha": "^10.7.3",
     "pactum": "^3.7.1"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha ./tests/test.js",
+    "test-e2e": "mocha ./tests/e2e/**.js",
+    "test-functional": "mocha ./tests/functional/**.js",
+    "test-contract": "mocha ./tests/contract/**.js"
   },
   "author": "",
   "license": "ISC"
